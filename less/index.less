@@ -48,12 +48,43 @@ table {
 	border-spacing: 0;
 }
 
+.fonts(@size) {
+	font-size: @size;
+}
+
+
+.flex() {
+	display: flex;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	.fonts(16px)
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	width: 100%;
+	.flex();
+	justify-content: center;
 }
 
+
+.container {
+	.flex();
+	flex-flow: column wrap;
+	width: 90%;
+	margin: 3% 0 2%;
+}
+
+.navbar {
+	.flex();
+	justify-content: flex-end;
+}
+
+.footer {
+	.flex();
+	margin: 0 auto;
+	align-content: center;
+}
