@@ -171,6 +171,9 @@ body {
   margin: 0 2% 0;
   text-decoration: none;
 }
+.container .navbar a:hover {
+  color: crimson;
+}
 @media (max-width: 500px) {
   .container .navbar a {
     margin: 0 auto;
@@ -289,6 +292,38 @@ body {
 .container .section .sub-section2 .content-right li {
   border: 1px solid gray;
   padding: 2%;
+}
+.container .section .bottom-section {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+}
+.container .section .bottom-section h2 {
+  font-size: 24px;
+  color: black;
+}
+.container .section .bottom-section table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .section .bottom-section table th {
+  font-size: 20px;
+}
+.container .section .bottom-section table td,
+.container .section .bottom-section table th {
+  border: 1px solid #333;
+  text-align: left;
+  padding: 8px;
+}
+.container .section .bottom-section table a:hover {
+  color: crimson;
+}
+.container .section .bottom-section table tr:nth-child(even) {
+  background-color: #e5e8e9;
+}
+.container .section .bottom-section table td,
+.container .section .bottom-section table a {
+  text-decoration: none;
 }
 .container .footer-section {
   display: flex;

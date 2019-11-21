@@ -115,6 +115,10 @@ html, body {
 			text-decoration: none;
 		}
 
+		a:hover {
+			color: crimson;
+		}
+
 		@media(max-width: 500px) {
 			a {
 				margin: 0 auto;
@@ -238,6 +242,42 @@ html, body {
 			}
 		}
 
+		.bottom-section {
+			.flex();
+			flex-flow: column wrap;
+			flex: 1;
+
+			h2 {
+				.fonts;
+			}
+
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			  
+				th {
+				  font-size: 20px;
+				}
+			  
+				td, th {
+				border: 1px solid #333;
+				text-align: left;
+				padding: 8px;
+				}
+
+				a:hover {
+					color: crimson;
+				}
+				
+				tr:nth-child(even) {
+				background-color: #e5e8e9;
+				}
+
+				td, a {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 
 	.footer-section {
