@@ -11,61 +11,87 @@
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
+
+    <script>less = { env: 'development'};</script>
+    <script src="less.js"></script>
+    <script>less.watch();</script>
   </head>
 
   <section class="container">
 
     <body>
       <nav class="navbar">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="https://Bradley-Krigbaum.github.io">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
-      <h1>My Resume</h1>
-
-      <section>
-        <img src="#" alt="#">
-        <h1>Bradley Krigbaum // Full Stack Web Developer</h1>
-        <p>Currently enrolled at Lambda School</p>
-        <p>// Simple About Me //</p>
-        <button>
-          <a href="#">Contact Me</a>
-        </button>
-      </section>
-
-      <section>
-        <div>
-          <h2>// In depth About Me //</h2>
-          <p>[    Filler Content    ]</p>
-        </div>
-        <div>
-          <h2>Skills</h2>
-          <ul>
-            <li>HTML / CSS / JS</li>
-            <li>Python</li>
-            <li>.Net Framework</li>
-            <li>React Framework</li>
-            <li>[ Filler Content ]</li>
-            <li>[ Filler Content ]</li>
-          </ul>
+      <section class="section">
+        <div class="top-section">
+          <img src="./assets/myPic.jpg" alt="#">
+          <h1>Bradley Krigbaum // Full Stack Web Developer</h1>
+          <p>Currently enrolled at Lambda School</p>
+          <p class="break"> </p>
+          <p>a Latin professor at Hampden-Sydney College in Virginia, looked up one of 
+              the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through 
+              the cites of the word in classical literature</p>
+          <button>
+            <a href="contact.html">Lets Get In Touch!</a>
+          </button>
         </div>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-        <table>
+      <section class="section">
+        <section class="sub-section1">
+          <div class="content-left">
+            <h2>// In depth About Me //</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a 
+              piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard 
+              McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of 
+              the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through 
+              the cites of the word in classical literature, discovered the undoubtable source. Lorem 
+              Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The 
+              Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the 
+              theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 
+              "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          </div>
+        </section>
+        <section class="sub-section2">
+          <div class="content-right">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML / CSS / JS</li>
+              <li>Python</li>
+              <li>.Net Framework</li>
+              <li>React Framework</li>
+              <li>[ Filler Content ]</li>
+              <li>[ Filler Content ]</li>
+            </ul>
+          </div>
+        </section>
+      </section>
 
-        </table>
+      <section class="section">
+        <div class="bottom-section">
+          <h2>Projects</h2>
+          <table>
+            <a href="https://bk-responsive-design.netlify.com/">Great Idea Site</a>
+            <a href="https://Bradley-Krigbaum.github.io/">Portfolio</a>
+            <a href="https://github.com/Bradley-Krigbaum?tab=repositories">Github Projects</a>
+
+          </table>
+        </div>
       </section>
 
 
     </body>
 
-    <footer class="footer">
-      <p>Copyright Krigbaum Technologies 2019</p>
-    </footer>
+    <section class="footer-section">
+      <footer class="footer">
+        <p>Copyright Krigbaum Technologies 2019</p>
+      </footer>
+    </section>
 
   </section>
 </html>
